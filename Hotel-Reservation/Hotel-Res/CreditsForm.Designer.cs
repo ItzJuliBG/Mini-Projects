@@ -33,11 +33,7 @@
             button2 = new Button();
             label5 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
-            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox2
@@ -82,33 +78,12 @@
             label1.TabIndex = 21;
             label1.Text = "Юлиян Велиславов Наумов";
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Hotel_Res.Properties.Resources.commits;
-            pictureBox1.Location = new Point(284, 347);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(219, 91);
-            pictureBox1.TabIndex = 22;
-            pictureBox1.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.Image = Hotel_Res.Properties.Resources.greenwall;
-            pictureBox3.Location = new Point(340, 209);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(112, 109);
-            pictureBox3.TabIndex = 23;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
-            // 
             // CreditsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox1);
             Controls.Add(label1);
             Controls.Add(label5);
             Controls.Add(pictureBox2);
@@ -116,8 +91,6 @@
             Name = "CreditsForm";
             Text = "CreditsForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -127,7 +100,5 @@
         private Button button2;
         private Label label5;
         private Label label1;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox3;
     }
 }
