@@ -17,39 +17,19 @@ namespace Hotel_Res
     public partial class MakeReservationForm : Form
     {
         List<Room> Rooms;
-        List<Room> newListRooms = new();
+        MethodList methodList;
 
         public MakeReservationForm()
         {
             InitializeComponent();
 
             Rooms = new();
+
+            methodList = new MethodList();
         }
         private void MakeReservationForm_Load(object sender, EventArgs e)
         {
-            string filePath2 = FilePaths.ReservationFileSavePath;
-            using StreamReader reader = new StreamReader(filePath2);
-
-            int charsRemeining = reader.Peek();
-            if (charsRemeining > 1)
-            {
-                while (reader.EndOfStream != true)
-                {
-                    var t = reader.ReadLine();
-                    var newLine = t.Split(", ");
-                    int roomNumber = int.Parse(newLine[0]);
-                    string name = newLine[1];
-                    string roomType = newLine[2];
-                    bool isCleaned = bool.Parse(newLine[3]);
-                    bool isOccupated = bool.Parse(newLine[4]);
-
-
-                    var roomToAdd = new Room(roomNumber, name, roomType, isCleaned, isOccupated);
-
-                    Rooms.Add(roomToAdd);
-
-                }
-            }
+            methodList.LoadingData(Rooms);
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -65,8 +45,7 @@ namespace Hotel_Res
         private void button2_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 form = new Form1();
-            form.Show();
+            methodList.ReturnToHome();
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -97,7 +76,7 @@ namespace Hotel_Res
                     Rooms.Insert(index, roomToUpdate);
 
                     string filePath2 = FilePaths.ReservationFileSavePath;
-                    using (StreamWriter writer = new StreamWriter(filePath2))//problem here with true value for append
+                    using (StreamWriter writer = new StreamWriter(filePath2))
 
                         foreach (var room in Rooms)
                         {

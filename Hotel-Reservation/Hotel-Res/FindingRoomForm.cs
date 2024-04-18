@@ -16,37 +16,16 @@ namespace Hotel_Res
     public partial class FindingRoomForm : Form
     {
         List<Room> Rooms;
+        MethodList methodList;
         public FindingRoomForm()
         {
             InitializeComponent();
 
-
             Rooms = new List<Room>();
 
-            string filePath2 = FilePaths.ReservationFileSavePath;
-            using StreamReader reader = new StreamReader(filePath2);
+            methodList = new MethodList();
 
-            int charsRemeining = reader.Peek();
-            if (charsRemeining > 1)
-            {
-                while (reader.EndOfStream != true)
-                {
-
-                    var t = reader.ReadLine();
-                    var newLine = t.Split(", ");
-                    int roomNumber = int.Parse(newLine[0]);
-                    string name = newLine[1];
-                    string roomType = newLine[2];
-                    bool isCleaned = bool.Parse(newLine[3]);
-                    bool isOccupated = bool.Parse(newLine[4]);
-
-
-                    var roomToAdd = new Room(roomNumber, name, roomType, isCleaned, isOccupated);
-
-                    Rooms.Add(roomToAdd);
-
-                }
-            }
+            methodList.LoadingData(Rooms);
         }
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -79,8 +58,12 @@ namespace Hotel_Res
         {
 
             this.Hide();
-            Form1 form1 = new Form1();
-            form1.Show();
+            methodList.ReturnToHome();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

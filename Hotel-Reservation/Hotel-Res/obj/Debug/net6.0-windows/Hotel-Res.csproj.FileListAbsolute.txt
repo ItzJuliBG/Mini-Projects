@@ -65,3 +65,26 @@ C:\Users\konst\OneDrive\Работен плот\Hotel-Reservation-Demo-main (1)\
 C:\Users\konst\OneDrive\Работен плот\Hotel-Reservation-Demo-main (1)\Hotel-Reservation-Demo-main\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.FindRoomForm.resources
 X:\School Projects\Hotel-Reservation-Demo\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.FreeingRoomForm.resources
 X:\School Projects\Hotel-Reservation-Demo\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.FindingRoomForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\bin\Debug\net6.0-windows\Hotel-Res.exe
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\bin\Debug\net6.0-windows\Hotel-Res.deps.json
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\bin\Debug\net6.0-windows\Hotel-Res.runtimeconfig.json
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\bin\Debug\net6.0-windows\Hotel-Res.dll
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\bin\Debug\net6.0-windows\Hotel-Res.pdb
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.AllRoomsForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.CleanRoomForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.CreditsForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.FindingRoomForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Reservations.Form1.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.FreeingRoomForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.MakeReservationForm.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel_Res.Properties.Resources.resources
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.csproj.GenerateResource.cache
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.GeneratedMSBuildEditorConfig.editorconfig
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.AssemblyInfoInputs.cache
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.AssemblyInfo.cs
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.csproj.CoreCompileInputs.cache
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.dll
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\refint\Hotel-Res.dll
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.pdb
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\Hotel-Res.genruntimeconfig.cache
+X:\School Projects\Mini-Projects\Hotel-Reservation\Hotel-Res\obj\Debug\net6.0-windows\ref\Hotel-Res.dll

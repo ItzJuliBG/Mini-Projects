@@ -29,58 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreditsForm));
-            comboBox1 = new ComboBox();
-            label1 = new Label();
-            label2 = new Label();
-            title = new Label();
             pictureBox2 = new PictureBox();
             button2 = new Button();
-            label3 = new Label();
-            label4 = new Label();
+            label5 = new Label();
+            label1 = new Label();
+            pictureBox1 = new PictureBox();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
-            // 
-            // comboBox1
-            // 
-            comboBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Team", "Back-End Development", "Early Design Development", "Documentation & Presentation" });
-            comboBox1.Location = new Point(149, 75);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(493, 40);
-            comboBox1.TabIndex = 3;
-            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(160, 140);
-            label1.Name = "label1";
-            label1.Size = new Size(493, 46);
-            label1.TabIndex = 0;
-            label1.Text = "Константин Христианов Ганев";
-            label1.Click += label1_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(160, 209);
-            label2.Name = "label2";
-            label2.Size = new Size(449, 46);
-            label2.TabIndex = 4;
-            label2.Text = "Юлиян Велиславов Наумов";
-            // 
-            // title
-            // 
-            title.AutoSize = true;
-            title.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            title.Location = new Point(243, 6);
-            title.Name = "title";
-            title.Size = new Size(99, 46);
-            title.TabIndex = 5;
-            title.Text = "Team";
             // 
             // pictureBox2
             // 
@@ -104,55 +62,72 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // label3
+            // label5
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(160, 281);
-            label3.Name = "label3";
-            label3.Size = new Size(466, 46);
-            label3.TabIndex = 18;
-            label3.Text = "Радослав Ивайлов Пангелов";
-            label3.Click += label3_Click;
+            label5.AutoSize = true;
+            label5.Font = new Font("Copperplate Gothic Light", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(204, 30);
+            label5.Name = "label5";
+            label5.Size = new Size(391, 52);
+            label5.TabIndex = 20;
+            label5.Text = "Дипломен Проект";
             // 
-            // label4
+            // label1
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 25F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(160, 352);
-            label4.Name = "label4";
-            label4.Size = new Size(450, 46);
-            label4.TabIndex = 19;
-            label4.Text = "walentin valentinow malakov";
+            label1.AutoSize = true;
+            label1.Font = new Font("Copperplate Gothic Light", 36F, FontStyle.Regular, GraphicsUnit.Point);
+            label1.Location = new Point(104, 105);
+            label1.Name = "label1";
+            label1.Size = new Size(588, 52);
+            label1.TabIndex = 21;
+            label1.Text = "Юлиян Велиславов Наумов";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Hotel_Res.Properties.Resources.commits;
+            pictureBox1.Location = new Point(284, 347);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(219, 91);
+            pictureBox1.TabIndex = 22;
+            pictureBox1.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.Image = Hotel_Res.Properties.Resources.greenwall;
+            pictureBox3.Location = new Point(340, 209);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(112, 109);
+            pictureBox3.TabIndex = 23;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // CreditsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
-            Controls.Add(label4);
-            Controls.Add(label3);
+            Controls.Add(pictureBox3);
+            Controls.Add(pictureBox1);
+            Controls.Add(label1);
+            Controls.Add(label5);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
-            Controls.Add(title);
-            Controls.Add(label2);
-            Controls.Add(comboBox1);
-            Controls.Add(label1);
             Name = "CreditsForm";
             Text = "CreditsForm";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private ComboBox comboBox1;
-        private Label label1;
-        private Label label2;
-        private Label title;
         private PictureBox pictureBox2;
         private Button button2;
-        private Label label3;
-        private Label label4;
+        private Label label5;
+        private Label label1;
+        private PictureBox pictureBox1;
+        private PictureBox pictureBox3;
     }
 }

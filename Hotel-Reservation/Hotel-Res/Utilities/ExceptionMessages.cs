@@ -15,5 +15,7 @@ namespace Hotel_Res.Utilities
         public const string reservationNameNecessary = "Името на резервацията е задължително!";
         public const string impossibleReservation = $"Стаята не е изчистена. \r\nРезервацията не е възможна!";
         public const string doneReservation = "Успешно направена резервация на името на ";
+        public const string roomAlreadyFree = "Тази стая е свободна вече!";
+        public const string roomFreedSuccessfully = "Стаята е освободена!";
     }
 }
