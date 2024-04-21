@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             label1 = new Label();
             button2 = new Button();
@@ -36,6 +37,8 @@
             button5 = new Button();
             button7 = new Button();
             button8 = new Button();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -139,12 +142,23 @@
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(300, 411);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(207, 37);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 15;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(button5);
@@ -156,6 +170,7 @@
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,5 +185,6 @@
         private Button button5;
         private Button button7;
         private Button button8;
+        private PictureBox pictureBox1;
     }
 }

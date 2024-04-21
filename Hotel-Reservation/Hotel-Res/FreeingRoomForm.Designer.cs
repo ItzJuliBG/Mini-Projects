@@ -34,7 +34,9 @@
             button2 = new Button();
             textBox1 = new TextBox();
             label1 = new Label();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // button1
@@ -91,12 +93,23 @@
             label1.TabIndex = 19;
             label1.Text = "Номер на стая за освобождаване:";
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(300, 411);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(207, 37);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 24;
+            pictureBox4.TabStop = false;
+            // 
             // FreeingRoomForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox4);
             Controls.Add(button1);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
@@ -106,6 +119,7 @@
             Text = "FreeingRoomForm";
             Load += FreeingRoomForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -117,5 +131,6 @@
         private Button button2;
         private TextBox textBox1;
         private Label label1;
+        private PictureBox pictureBox4;
     }
 }

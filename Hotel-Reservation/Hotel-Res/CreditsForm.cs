@@ -52,5 +52,10 @@ namespace Hotel_Res
         {
 
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

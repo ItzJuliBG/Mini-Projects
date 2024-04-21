@@ -32,8 +32,10 @@
             dataGridView1 = new DataGridView();
             pictureBox2 = new PictureBox();
             button2 = new Button();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // dataGridView1
@@ -74,12 +76,23 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(300, 411);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(207, 37);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 16;
+            pictureBox1.TabStop = false;
+            // 
             // AllRoomsForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
             Controls.Add(dataGridView1);
@@ -88,6 +101,7 @@
             Load += AllRoomsForm_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -96,5 +110,6 @@
         private DataGridView dataGridView1;
         private PictureBox pictureBox2;
         private Button button2;
+        private PictureBox pictureBox1;
     }
 }

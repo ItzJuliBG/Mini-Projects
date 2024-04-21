@@ -3,3 +3,4 @@ Wikipedia.com - C Sharp
 https://eurawest.bg/разработка-на-софтуер-6-етапа-които-тр/
 https://gnnmobile.eu/какво-е-solid/
 Книга - C# джобен справочник - Джоузеф Албахари и Бен Албахари
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/

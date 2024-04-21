@@ -36,14 +36,16 @@
             pictureBox2 = new PictureBox();
             button2 = new Button();
             button1 = new Button();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Georgia", 21F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(205, 48);
+            label1.Location = new Point(219, 51);
             label1.Name = "label1";
             label1.Size = new Size(359, 32);
             label1.TabIndex = 0;
@@ -53,7 +55,7 @@
             // 
             textBox1.BackColor = Color.LavenderBlush;
             textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.Location = new Point(149, 101);
+            textBox1.Location = new Point(164, 101);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(471, 39);
             textBox1.TabIndex = 1;
@@ -63,16 +65,17 @@
             // 
             textBox2.BackColor = Color.LavenderBlush;
             textBox2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.Location = new Point(149, 233);
+            textBox2.Location = new Point(164, 233);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(471, 39);
             textBox2.TabIndex = 3;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Georgia", 21F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(241, 174);
+            label2.Location = new Point(255, 175);
             label2.Name = "label2";
             label2.Size = new Size(276, 32);
             label2.TabIndex = 2;
@@ -108,7 +111,7 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Georgia", 18.75F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = Color.Black;
-            button1.Location = new Point(261, 356);
+            button1.Location = new Point(276, 326);
             button1.Name = "button1";
             button1.Size = new Size(255, 68);
             button1.TabIndex = 16;
@@ -116,12 +119,23 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(300, 411);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(207, 37);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 24;
+            pictureBox4.TabStop = false;
+            // 
             // MakeReservationForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(229, 234, 245);
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox4);
             Controls.Add(button1);
             Controls.Add(pictureBox2);
             Controls.Add(button2);
@@ -133,6 +147,7 @@
             Text = "MakeReservationForm";
             Load += MakeReservationForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -146,5 +161,6 @@
         private PictureBox pictureBox2;
         private Button button2;
         private Button button1;
+        private PictureBox pictureBox4;
     }
 }
