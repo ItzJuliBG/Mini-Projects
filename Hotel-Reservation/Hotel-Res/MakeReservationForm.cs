@@ -49,46 +49,53 @@ namespace Hotel_Res
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            int roomNumber = int.Parse(textBox1.Text);
-            string reservationName = textBox2.Text;
-
-            if (roomNumber <= 0 || roomNumber > 30)
+            if (textBox1.Text == "")
             {
-                MessageBox.Show(ExceptionMessages.nonExistantRoomNumber);
-
-            }
-            else if (reservationName == null || reservationName == "")
-            {
-                MessageBox.Show(ExceptionMessages.reservationNameNecessary);
-
+                MessageBox.Show(ExceptionMessages.roomNumberNecessary);
             }
             else
             {
-                var roomToUpdate = Rooms.FirstOrDefault(x => x.RoomNumber == roomNumber);
-                if (roomToUpdate.IsCleaned == true)
+                int roomNumber = int.Parse(textBox1.Text);
+                string reservationName = textBox2.Text;
+
+                if (roomNumber <= 0 || roomNumber > 30)
                 {
-                    roomToUpdate.IsOccupated = true;
-                    roomToUpdate.IsCleaned = false;
-                    roomToUpdate.ReservationName = reservationName;
+                    MessageBox.Show(ExceptionMessages.nonExistantRoomNumber);
 
-                    var index = Rooms.IndexOf(roomToUpdate);
-                    Rooms.RemoveAt(index);
-                    Rooms.Insert(index, roomToUpdate);
+                }
+                else if (reservationName == null || reservationName == "")
+                {
+                    MessageBox.Show(ExceptionMessages.reservationNameNecessary);
 
-                    string filePath2 = FilePaths.ReservationFileSavePath;
-                    using (StreamWriter writer = new StreamWriter(filePath2))
-
-                        foreach (var room in Rooms)
-                        {
-                            writer.WriteLine($"{room.RoomNumber}, {room.ReservationName}, {room.RoomType}, {room.IsCleaned}, {room.IsOccupated}");
-
-                        }
-
-                    MessageBox.Show(ExceptionMessages.doneReservation, reservationName);
                 }
                 else
                 {
-                    MessageBox.Show(ExceptionMessages.impossibleReservation);
+                    var roomToUpdate = Rooms.FirstOrDefault(x => x.RoomNumber == roomNumber);
+                    if (roomToUpdate.IsCleaned == true)
+                    {
+                        roomToUpdate.IsOccupated = true;
+                        roomToUpdate.IsCleaned = false;
+                        roomToUpdate.ReservationName = reservationName;
+
+                        var index = Rooms.IndexOf(roomToUpdate);
+                        Rooms.RemoveAt(index);
+                        Rooms.Insert(index, roomToUpdate);
+
+                        string filePath2 = FilePaths.ReservationFileSavePath;
+                        using (StreamWriter writer = new StreamWriter(filePath2))
+
+                            foreach (var room in Rooms)
+                            {
+                                writer.WriteLine($"{room.RoomNumber}, {room.ReservationName}, {room.RoomType}, {room.IsCleaned}, {room.IsOccupated}");
+
+                            }
+
+                        MessageBox.Show(ExceptionMessages.doneReservation + reservationName);
+                    }
+                    else
+                    {
+                        MessageBox.Show(ExceptionMessages.impossibleReservation);
+                    }
                 }
             }
         }

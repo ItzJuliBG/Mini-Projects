@@ -1,6 +1,6 @@
-Книга - Въведение в програмирането със C# - Светлин Наков и Колектив
-Wikipedia.com - C Sharp
+https://bg.wikipedia.org/wiki/C_Sharp
 https://eurawest.bg/разработка-на-софтуер-6-етапа-които-тр/
 https://gnnmobile.eu/какво-е-solid/
-Книга - C# джобен справочник - Джоузеф Албахари и Бен Албахари
 https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/
+Книга - C# джобен справочник - Джоузеф Албахари и Бен Албахари
+Книга - Въведение в програмирането със C# - Светлин Наков и Колектив

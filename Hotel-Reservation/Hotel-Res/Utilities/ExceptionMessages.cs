@@ -13,6 +13,7 @@ namespace Hotel_Res.Utilities
         public const string roomCleanedSuccessfully = "Стаята е изчистена!";
         public const string roomAlreadyCleaned = "Тази стая е чиста вече!";
         public const string reservationNameNecessary = "Името на резервацията е задължително!";
+        public const string roomNumberNecessary = "Номерът на стаята е задължителен!";
         public const string impossibleReservation = $"Стаята не е изчистена. \r\nРезервацията не е възможна!";
         public const string doneReservation = "Успешно направена резервация на името на ";
         public const string roomAlreadyFree = "Тази стая е свободна вече!";

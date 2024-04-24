@@ -1,23 +1,23 @@
 1, , Апартамент, True, False
-2, , Стая, True, False
+2, Иван Вазов, Стая, True, True
 3, , Апартамент, True, False
 4, , Стая, True, False
-5, , Апартамент, True, False
+5, Бойко Борисов, Апартамент, False, True
 6, , Стая, True, False
 7, , Апартамент, True, False
-8, , Стая, True, False
+8, , Стая, False, False
 9, , Апартамент, True, False
 10, , Стая, True, False
 11, , Апартамент, True, False
-12, a, Стая, False, True
+12, , Стая, True, False
 13, , Апартамент, True, False
 14, , Стая, True, False
-15, , Апартамент, True, False
+15, ааа, Апартамент, False, True
 16, , Стая, True, False
-17, , Апартамент, True, False
+17, ивоп, Апартамент, False, True
 18, , Стая, True, False
-19, , Апартамент, True, False
-20, , Стая, True, False
+19, аа, Апартамент, False, True
+20, Боко Андонов, Стая, False, True
 21, asd, Апартамент, False, True
 22, a, Стая, False, True
 23, , Апартамент, True, False

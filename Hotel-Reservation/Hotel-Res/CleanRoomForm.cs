@@ -22,13 +22,15 @@ namespace Hotel_Res
         public CleanRoomForm()
         {
             InitializeComponent();
+            
+            Rooms = new List<Room>();
 
             methodList = new MethodList();
 
+            methodList.LoadingData(Rooms);
         }
         private void CleanRoomForm_Load(object sender, EventArgs e)
         {
-            methodList.LoadingData(Rooms);
         }
 
         private void label1_Click(object sender, EventArgs e)
