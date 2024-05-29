@@ -2,7 +2,7 @@
 2, Иван Вазов, Стая, True, True
 3, , Апартамент, True, False
 4, , Стая, True, False
-5, Бойко Борисов, Апартамент, False, True
+5, , Апартамент, True, False
 6, , Стая, True, False
 7, , Апартамент, True, False
 8, , Стая, False, False
